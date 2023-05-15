@@ -1,3 +1,4 @@
+/* Estilos para pantallas grandes */
 .NavBar-container {
   display: flex;
   align-items: center;
@@ -8,8 +9,7 @@
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
+  width: 250px;
 }
 
 .secciones ul {
@@ -41,4 +41,30 @@
 
 .carrito:hover {
   color: #ff7f50;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .NavBar-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .secciones ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secciones .seccion {
+    margin-bottom: 10px;
+  }
+
+  .carrito {
+    margin-top: 20px;
+  }
 }

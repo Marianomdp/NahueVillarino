@@ -59,13 +59,37 @@
   color: #aaa;
 }
 
+.footer-logo {
+  margin-bottom: 20px;
+}
+
 .footer-logo img {
   max-width: 150px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 .footer-bottom {
   font-size: 12px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-nav li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-social ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-social li {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
 }

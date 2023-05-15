@@ -43,7 +43,10 @@ export const Footer = () => {
         </ul>
       </div>
       <div className="footer-logo">
-        <img src="/path/to/logo.png" alt="Logo" />
+        <img
+          src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684185359/logo-removebg-preview_dout9y.png"
+          alt="Logo"
+        />
       </div>
       <div className="footer-bottom">
         <p>&copy; 2023 PHILOSOLUTIONS. All rights reserved.</p>

@@ -5,7 +5,11 @@ import CartWidget from "../CartWidget/CartWidget";
 export const NavBar = () => {
   return (
     <div className="NavBar-container">
-      <img className="logo" src="../../assets/logo.png" alt="logo principal" />
+      <img
+        className="logo"
+        src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684185359/logo-removebg-preview_dout9y.png"
+        alt="logo principal"
+      />
       <div className="secciones">
         <ul>
           <li className="seccion">Especials</li>
