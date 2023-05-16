@@ -15,6 +15,7 @@
 .secciones ul {
   list-style-type: none;
   display: flex;
+  text-align: center;
   gap: 20px;
 }
 
@@ -36,6 +37,7 @@
   font-weight: bold;
   color: #333;
   cursor: pointer;
+  margin: 2px;
   transition: color 0.3s ease;
 }
 
