@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const items = [
   {
-    src: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/403aa0165763581.640cfb8913b29.jpg",
+    src: "https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684877189/luna_edvvji.png",
     altText: "mountains",
     caption: "Twilight",
   },
@@ -20,7 +20,7 @@ const items = [
     caption: "Specials",
   },
   {
-    src: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/91481b165764775.640d0378d31a8.jpg",
+    src: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/72ff6b157219493.6374f9ffb54e6.jpg",
     altText: "wave",
     caption: "Nature",
   },
@@ -79,6 +79,7 @@ export class Carrusel extends Component {
           key={item.src}
         >
           <div
+            className="contenedor"
             style={{
               width: "100vw",
               height: "100vh",
@@ -89,6 +90,7 @@ export class Carrusel extends Component {
             }}
           >
             <img
+              className="imagen"
               src={item.src}
               alt={item.altText}
               style={{

@@ -1,15 +1,22 @@
 /* Estilos para pantallas grandes */
 .NavBar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #f2f2f2;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Opacidad inicial */
+  transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+  z-index: 999;
+  filter: invert(100%);
 }
 
 .logo {
-  width: 250px;
+  width: 120px;
 }
 
 .secciones ul {
@@ -20,7 +27,7 @@
 }
 
 .secciones .seccion {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
   text-transform: uppercase;
@@ -33,7 +40,7 @@
 }
 
 .carrito {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
@@ -53,13 +60,14 @@
   }
 
   .logo {
-    width: 200px;
+    width: 120px;
     margin-bottom: 20px;
   }
 
   .secciones ul {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   .secciones .seccion {
@@ -68,5 +76,23 @@
 
   .carrito {
     margin-top: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .secciones {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .mobile-menu-open .secciones {
+    display: block;
   }
 }
