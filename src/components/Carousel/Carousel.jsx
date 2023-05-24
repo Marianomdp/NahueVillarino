@@ -81,6 +81,7 @@ export class Carrusel extends Component {
           <div
             className="contenedor"
             style={{
+              marginTop: "80px",
               width: "100vw",
               height: "100vh",
               display: "flex",

@@ -1,0 +1,16 @@
+.zoom-image {
+  transition: transform 0.3s;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
+.bw-to-color {
+  filter: grayscale(100%);
+  transition: filter 0.4s;
+}
+
+.bw-to-color:hover {
+  filter: none;
+}
