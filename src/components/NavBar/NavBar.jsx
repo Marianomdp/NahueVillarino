@@ -1,59 +1,72 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./NavBar.modules.css";
 import CartWidget from "../CartWidget/CartWidget";
-
+import {
+  CCollapse,
+  CContainer,
+  CDropdown,
+  CNavItem,
+  CNavLink,
+  CNavbar,
+  CNavbarBrand,
+  CNavbarNav,
+  CNavbarToggler,
+} from "@coreui/react";
 export const NavBar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector(".NavBar-container");
-      const scrollPosition = window.scrollY;
-      const opacity = scrollPosition > 0 ? 0.9 : 1; // Opacidad deseada al hacer scroll
-
-      navbar.style.opacity = opacity;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
+  const [visible, setVisible] = useState(false);
   return (
-    <nav
-      className={`NavBar-container ${
-        isMobileMenuOpen ? "mobile-menu-open" : ""
-      }`}
-    >
-      <img
-        className={`logo ${isMobileMenuOpen ? "hide" : ""}`}
-        src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684876831/fotor_2023-5-23_18_15_32-modified_g9ntsk.png"
-        alt="logo principal"
-      />
-      <div className={`secciones ${isMobileMenuOpen ? "show" : ""}`}>
-        <ul>
-          <li className="seccion">Especials</li>
-          <li className="seccion">Nature</li>
-          <li className="seccion">Twilight</li>
-          <li className="seccion">Shadows</li>
-          <li className="seccion">Contact</li>
-        </ul>
-      </div>
-      <div>
-        <CartWidget />
-      </div>
-      {window.innerWidth <= 768 && (
-        <div className="menu-icon" onClick={toggleMobileMenu}>
-          &#9776;
-        </div>
-      )}
-    </nav>
+    <>
+      <CNavbar
+        expand="lg"
+        colorScheme="dark"
+        className="bg-dark"
+        placement="sticky-top"
+      >
+        <CContainer fluid>
+          <CNavbarBrand href="#">
+            <img
+              src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684876680/fotor_2023-5-23_18_15_32_gyinj9.png"
+              alt="logo principal"
+              width="80"
+              height="70"
+            />
+          </CNavbarBrand>
+          <CNavbarToggler
+            aria-label="Toggle navigation"
+            aria-expanded={visible}
+            onClick={() => setVisible(!visible)}
+          />
+          <CCollapse className="navbar-collapse" visible={visible}>
+            <CNavbarNav>
+              <CNavItem>
+                <CNavLink href="#" active>
+                  Home
+                </CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="#">Nature</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="#">Especials</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="#">Shadows</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="#">Twilight</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="#">Write me</CNavLink>
+              </CNavItem>
+              <CNavItem></CNavItem>
+            </CNavbarNav>
+          </CCollapse>{" "}
+          <CNavbarBrand className="widget" href="#">
+            <CartWidget />
+          </CNavbarBrand>
+        </CContainer>
+      </CNavbar>
+    </>
   );
 };
 

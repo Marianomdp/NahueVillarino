@@ -2,8 +2,19 @@ import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import "./MainGrid.css";
+import { useMediaQuery } from "@mui/material";
 
 export default function Section() {
+  const isTablet = useMediaQuery("(max-width: 1200px)");
+  const isMobile = useMediaQuery("(max-width: 800px)");
+
+  let cols = 3;
+  if (isTablet) {
+    cols = 2;
+  }
+  if (isMobile) {
+    cols = 1;
+  }
   return (
     <ImageList
       sx={{
@@ -11,7 +22,7 @@ export default function Section() {
         padding: "20px 20px 20px 20px",
         margin: 0,
       }}
-      cols={3}
+      cols={cols}
     >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>

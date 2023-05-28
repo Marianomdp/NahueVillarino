@@ -5,7 +5,7 @@ import React from "react";
 
 const Carousel = () => {
   return (
-    <div style={{ marginTop: "60px" }}>
+    <div style={{ marginTop: "auto" }}>
       <CCarousel controls transition="crossfade">
         <CCarouselItem>
           <CImage
