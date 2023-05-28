@@ -6,7 +6,7 @@ import { useMediaQuery } from "@mui/material";
 
 export default function Section() {
   const isTablet = useMediaQuery("(max-width: 1200px)");
-  const isMobile = useMediaQuery("(max-width: 800px)");
+  const isMobile = useMediaQuery("(max-width: 540px)");
 
   let cols = 3;
   if (isTablet) {
@@ -45,7 +45,7 @@ const itemData = [
     title: "aca",
   },
   {
-    img: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/70ead5165763581.640cfb8914a7e.jpg",
+    img: "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159591/Web%20Orden/Landscapes/3%20de%20portada/NGF_3898_q4uwzq.jpg",
     title: "aca",
   },
   {

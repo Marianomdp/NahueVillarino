@@ -5,37 +5,35 @@ import React from "react";
 
 const Carousel = () => {
   return (
-    <div style={{ marginTop: "auto" }}>
-      <CCarousel controls transition="crossfade">
-        <CCarouselItem>
-          <CImage
-            className="d-block w-100"
-            src={
-              "https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684877189/luna_edvvji.png"
-            }
-            alt="Twilight"
-          />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage
-            className="d-block w-100"
-            src={
-              "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4f5cf4156824703.636db291cbaba.jpg"
-            }
-            alt="Specials"
-          />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage
-            className="d-block w-100"
-            src={
-              "https://mir-s3-cdn-cf.behance.net/project_modules/1400/72ff6b157219493.6374f9ffb54e6.jpg"
-            }
-            alt="Nature"
-          />
-        </CCarouselItem>
-      </CCarousel>
-    </div>
+    <CCarousel interval={3000} controls transition="crossfade">
+      <CCarouselItem>
+        <CImage
+          className="d-block w-100"
+          src={
+            "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159612/Web%20Orden/Landscapes/Bariloche%20-%20Argentina/NGF_8544_jy51ag.jpg"
+          }
+          alt="Twilight"
+        />
+      </CCarouselItem>
+      <CCarouselItem>
+        <CImage
+          className="d-block w-100"
+          src={
+            "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159588/Web%20Orden/Landscapes/Bariloche%20-%20Argentina/NGF_8152_dkjprp.jpg"
+          }
+          alt="Specials"
+        />
+      </CCarouselItem>
+      <CCarouselItem>
+        <CImage
+          className="d-block w-100"
+          src={
+            "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159564/Web%20Orden/Landscapes/3%20de%20portada/DSC_4935_gd6brd.jpg"
+          }
+          alt="Nature"
+        />
+      </CCarouselItem>
+    </CCarousel>
   );
 };
 

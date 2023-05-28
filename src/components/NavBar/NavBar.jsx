@@ -4,7 +4,6 @@ import CartWidget from "../CartWidget/CartWidget";
 import {
   CCollapse,
   CContainer,
-  CDropdown,
   CNavItem,
   CNavLink,
   CNavbar,
@@ -40,25 +39,19 @@ export const NavBar = () => {
             <CNavbarNav>
               <CNavItem>
                 <CNavLink href="#" active>
-                  Home
+                  PORTFOLIO
                 </CNavLink>
               </CNavItem>
               <CNavItem>
-                <CNavLink href="#">Nature</CNavLink>
+                <CNavLink href="#" active>
+                  BIO
+                </CNavLink>
               </CNavItem>
               <CNavItem>
-                <CNavLink href="#">Especials</CNavLink>
+                <CNavLink href="#" active>
+                  CONTACT
+                </CNavLink>
               </CNavItem>
-              <CNavItem>
-                <CNavLink href="#">Shadows</CNavLink>
-              </CNavItem>
-              <CNavItem>
-                <CNavLink href="#">Twilight</CNavLink>
-              </CNavItem>
-              <CNavItem>
-                <CNavLink href="#">Write me</CNavLink>
-              </CNavItem>
-              <CNavItem></CNavItem>
             </CNavbarNav>
           </CCollapse>{" "}
           <CNavbarBrand className="widget" href="#">
