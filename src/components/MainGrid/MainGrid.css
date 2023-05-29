@@ -1,16 +1,16 @@
 .zoom-image {
-  transition: transform 0.3s;
+  transition: transform 0.3s, filter 0.4s; /* Agregar transición para el filtro */
 }
 
 .zoom-image:hover {
   transform: scale(1.1);
+  filter: grayscale(100%); /* Aplicar escala de grises al hacer hover */
 }
 
 .bw-to-color {
-  filter: grayscale(100%);
-  transition: filter 0.4s;
+  filter: none; /* Eliminar la escala de grises inicial */
 }
 
 .bw-to-color:hover {
-  filter: none;
+  filter: grayscale(100%); /* Aplicar escala de grises al hacer hover */
 }
