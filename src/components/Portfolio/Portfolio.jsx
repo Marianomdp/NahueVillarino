@@ -5,20 +5,16 @@ export const Portfolio = () => {
   return (
     <CNav variant="tabs">
       <CNavItem>
-        <CNavLink href="#" active>
-          Active
-        </CNavLink>
+        <CNavLink href="#">Nature</CNavLink>
       </CNavItem>
       <CNavItem>
-        <CNavLink href="#">Link</CNavLink>
+        <CNavLink href="#">Specials</CNavLink>
       </CNavItem>
       <CNavItem>
-        <CNavLink href="#">Link</CNavLink>
+        <CNavLink href="#">Day</CNavLink>
       </CNavItem>
       <CNavItem>
-        <CNavLink href="#" disabled>
-          Disabled
-        </CNavLink>
+        <CNavLink href="#">Night</CNavLink>
       </CNavItem>
     </CNav>
   );

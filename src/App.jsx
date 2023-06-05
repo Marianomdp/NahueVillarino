@@ -1,16 +1,23 @@
-import Carousel from "./components/Carousel/Carousel";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
-import MainGrid from "./components/MainGrid/MainGrid";
 import { NavBar } from "./components/NavBar/NavBar";
+import Home from "./components/Home/Home";
+import Portfolio from "./components/Portfolio/Portfolio";
+import { Form } from "./components/Form/Form";
+import Bio from "./components/Bio/Bio";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <Carousel />
-      <MainGrid />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/contact" element={<Form />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
