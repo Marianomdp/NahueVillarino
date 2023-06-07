@@ -1,22 +1,96 @@
 import { CNav, CNavItem, CNavLink } from "@coreui/react";
 import React from "react";
+import { useState } from "react";
 
-export const Portfolio = () => {
+const Portfolio = () => {
+  const [currentSection, setCurrentSection] = useState("bands");
+
+  const handleSectionChange = (section) => {
+    setCurrentSection(section);
+  };
+
   return (
-    <CNav variant="tabs">
-      <CNavItem>
-        <CNavLink href="#">Nature</CNavLink>
-      </CNavItem>
-      <CNavItem>
-        <CNavLink href="#">Specials</CNavLink>
-      </CNavItem>
-      <CNavItem>
-        <CNavLink href="#">Day</CNavLink>
-      </CNavItem>
-      <CNavItem>
-        <CNavLink href="#">Night</CNavLink>
-      </CNavItem>
-    </CNav>
+    <div>
+      <CNav variant="tabs">
+        <CNavItem>
+          <CNavLink
+            onClick={() => handleSectionChange("bands")}
+            active={currentSection === "bands"}
+          >
+            Bands
+          </CNavLink>
+        </CNavItem>
+        <CNavItem>
+          <CNavLink
+            onClick={() => handleSectionChange("landscapes")}
+            active={currentSection === "landscapes"}
+          >
+            Landscapes
+          </CNavLink>
+        </CNavItem>
+        <CNavItem>
+          <CNavLink
+            onClick={() => handleSectionChange("wildlife")}
+            active={currentSection === "wildlife"}
+          >
+            Wildlife
+          </CNavLink>
+        </CNavItem>
+        <CNavItem>
+          <CNavLink
+            onClick={() => handleSectionChange("texture")}
+            active={currentSection === "texture"}
+          >
+            Texture
+          </CNavLink>
+        </CNavItem>
+        <CNavItem>
+          <CNavLink
+            onClick={() => handleSectionChange("street")}
+            active={currentSection === "street"}
+          >
+            Street
+          </CNavLink>
+        </CNavItem>
+      </CNav>
+
+      <div>
+        {currentSection === "bands" && (
+          <div>
+            <h2>Bands Section</h2>
+            {/* Agregar aquí la galería de imágenes para Bands */}
+          </div>
+        )}
+
+        {currentSection === "landscapes" && (
+          <div>
+            <h2>Landscapes Section</h2>
+            {/* Agregar aquí la galería de imágenes para Landscapes */}
+          </div>
+        )}
+
+        {currentSection === "wildlife" && (
+          <div>
+            <h2>Wildlife Section</h2>
+            {/* Agregar aquí la galería de imágenes para Wildlife */}
+          </div>
+        )}
+
+        {currentSection === "texture" && (
+          <div>
+            <h2>Texture Section</h2>
+            {/* Agregar aquí la galería de imágenes para Texture */}
+          </div>
+        )}
+
+        {currentSection === "street" && (
+          <div>
+            <h2>Street Section</h2>
+            {/* Agregar aquí la galería de imágenes para Street */}
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 

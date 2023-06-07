@@ -45,7 +45,7 @@ const itemData = [
     title: "aca",
   },
   {
-    img: "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159591/Web%20Orden/Landscapes/3%20de%20portada/NGF_3898_q4uwzq.jpg",
+    img: "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159655/Web%20Orden/Wildlife/NGF_8250_drh4lo.jpg",
     title: "aca",
   },
   {
@@ -61,7 +61,7 @@ const itemData = [
     title: "aca",
   },
   {
-    img: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/868c87165764775.640d0378cdc20.jpg",
+    img: "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685678340/Web%20Orden/Wildlife/NGF_4918_tn14su.jpg",
     title: "aca",
   },
   {
@@ -85,7 +85,7 @@ const itemData = [
     title: "aca",
   },
   {
-    img: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c03703156997377.63715894cad0e.jpg",
+    img: "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159588/Web%20Orden/Landscapes/Bariloche%20-%20Argentina/NGF_8152_dkjprp.jpg",
     title: "aca",
   },
 ];
