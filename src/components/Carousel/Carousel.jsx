@@ -12,9 +12,9 @@ const Carousel = () => {
             className="d-block w-100 h-100"
             style={{ objectFit: "contain" }}
             src={
-              "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159612/Web%20Orden/Landscapes/Bariloche%20-%20Argentina/NGF_8544_jy51ag.jpg"
+              "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685684571/202460719_vqn32h.jpg"
             }
-            alt="Twilight"
+            alt="Bariloche"
           />
         </div>
       </CCarouselItem>
@@ -24,9 +24,9 @@ const Carousel = () => {
             className="d-block w-100 h-100"
             style={{ objectFit: "contain" }}
             src={
-              "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159588/Web%20Orden/Landscapes/Bariloche%20-%20Argentina/NGF_8152_dkjprp.jpg"
+              "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159617/Web%20Orden/Landscapes/Itacoatiara%20-%20Brasil/DSC_5487_aazyqj.jpg"
             }
-            alt="Specials"
+            alt="Monkey"
           />
         </div>
       </CCarouselItem>
@@ -36,9 +36,9 @@ const Carousel = () => {
             className="d-block w-100 h-100"
             style={{ objectFit: "contain" }}
             src={
-              "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159564/Web%20Orden/Landscapes/3%20de%20portada/DSC_4935_gd6brd.jpg"
+              "https://res.cloudinary.com/dnj3a7mfg/image/upload/v1685159621/Web%20Orden/Landscapes/Itaipu%20-%20Brasil/DSC_8289_Fin_de_Tarde_Itaipu_usvmiq.jpg"
             }
-            alt="Nature"
+            alt="Brasil"
           />
         </div>
       </CCarouselItem>
