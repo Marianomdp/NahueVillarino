@@ -1,6 +1,7 @@
 import { CNav, CNavItem, CNavLink } from "@coreui/react";
 import React from "react";
 import { useState } from "react";
+import ItemListContainer from "../ItemList/ItemListContainer";
 
 const Portfolio = () => {
   const [currentSection, setCurrentSection] = useState("bands");
@@ -10,7 +11,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "white" }}>
       <CNav variant="tabs">
         <CNavItem>
           <CNavLink
@@ -58,35 +59,35 @@ const Portfolio = () => {
         {currentSection === "bands" && (
           <div>
             <h2>Bands Section</h2>
-            {/* Agregar aquí la galería de imágenes para Bands */}
+            <ItemListContainer category="bands" />
           </div>
         )}
 
         {currentSection === "landscapes" && (
           <div>
             <h2>Landscapes Section</h2>
-            {/* Agregar aquí la galería de imágenes para Landscapes */}
+            <ItemListContainer category="landscapes" />
           </div>
         )}
 
         {currentSection === "wildlife" && (
           <div>
             <h2>Wildlife Section</h2>
-            {/* Agregar aquí la galería de imágenes para Wildlife */}
+            <ItemListContainer category="wildlife" />
           </div>
         )}
 
         {currentSection === "texture" && (
           <div>
             <h2>Texture Section</h2>
-            {/* Agregar aquí la galería de imágenes para Texture */}
+            <ItemListContainer category="texture" />
           </div>
         )}
 
         {currentSection === "street" && (
           <div>
             <h2>Street Section</h2>
-            {/* Agregar aquí la galería de imágenes para Street */}
+            <ItemListContainer category="street" />
           </div>
         )}
       </div>
