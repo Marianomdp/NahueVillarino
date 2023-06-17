@@ -5,13 +5,13 @@ import {
   CCollapse,
   CContainer,
   CNavItem,
-  CNavLink,
   CNavbar,
   CNavbarBrand,
   CNavbarNav,
   CNavbarToggler,
 } from "@coreui/react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import { Button } from "@coreui/coreui";
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
   return (
@@ -40,19 +40,19 @@ export const NavBar = () => {
             <CCollapse className="navbar-collapse" visible={visible}>
               <CNavbarNav>
                 <CNavItem>
-                  <CNavLink href="/portfolio" active>
-                    PORTFOLIO
-                  </CNavLink>
+                  <Link href="/portfolio" active>
+                    <Button>Portfolio</Button>
+                  </Link>
                 </CNavItem>
                 <CNavItem>
-                  <CNavLink href="/bio" active>
-                    BIO
-                  </CNavLink>
+                  <Link href="/bio" active>
+                    <Button>Bio</Button>
+                  </Link>
                 </CNavItem>
                 <CNavItem>
-                  <CNavLink href="/contact" active>
-                    CONTACT
-                  </CNavLink>
+                  <Link href="/contact" active>
+                    <Button>Contact me</Button>
+                  </Link>
                 </CNavItem>
               </CNavbarNav>
             </CCollapse>{" "}

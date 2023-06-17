@@ -56,22 +56,22 @@ const Cart = ({
           })}
         </div>
         <div className="cart-info">
-          <h2>Descripcion del carrito:</h2>
-          <h3>Cantidad de productos: {totalProducts()}</h3>
+          <h2>Cart description:</h2>
+          <h3>Images: {totalProducts()}</h3>
           <h3>Total de productos: $ {total}</h3>
           {cart.length > 0 ? (
             <div className="btn-cart">
               {" "}
               <Button onClick={clearCartWithAlert} variant="contained">
-                Vaciar carrito
+                Empty Cart
               </Button>
               <Button variant="contained" onClick={() => navigate("/checkout")}>
-                Finalizar la compra
+                Finish
               </Button>
             </div>
           ) : (
             <Link to="/portfolio">
-              <Button variant="contained">Agrega productos</Button>
+              <Button variant="contained">Portfolio</Button>
             </Link>
           )}
 
