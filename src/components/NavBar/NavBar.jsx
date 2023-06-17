@@ -11,7 +11,8 @@ import {
   CNavbarToggler,
 } from "@coreui/react";
 import { Link, Outlet } from "react-router-dom";
-import { Button } from "@coreui/coreui";
+import { Box, Button } from "@mui/material";
+
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
   return (
@@ -38,23 +39,34 @@ export const NavBar = () => {
               onClick={() => setVisible(!visible)}
             />
             <CCollapse className="navbar-collapse" visible={visible}>
-              <CNavbarNav>
-                <CNavItem>
-                  <Link href="/portfolio" active>
-                    <Button>Portfolio</Button>
-                  </Link>
-                </CNavItem>
-                <CNavItem>
-                  <Link href="/bio" active>
-                    <Button>Bio</Button>
-                  </Link>
-                </CNavItem>
-                <CNavItem>
-                  <Link href="/contact" active>
-                    <Button>Contact me</Button>
-                  </Link>
-                </CNavItem>
-              </CNavbarNav>
+              <div>
+                <Button
+                  variant="contained"
+                  size="small"
+                  href="/portfolio"
+                  sx={{ backgroundColor: "grey" }}
+                >
+                  Portfolio
+                </Button>
+
+                <Button
+                  variant="contained"
+                  size="small"
+                  href="/bio"
+                  sx={{ backgroundColor: "grey" }}
+                >
+                  Bio
+                </Button>
+
+                <Button
+                  variant="contained"
+                  size="small"
+                  href="/contact"
+                  sx={{ backgroundColor: "grey" }}
+                >
+                  Contact
+                </Button>
+              </div>
             </CCollapse>{" "}
             <CNavbarBrand className="widget" href="#">
               <CartWidget />

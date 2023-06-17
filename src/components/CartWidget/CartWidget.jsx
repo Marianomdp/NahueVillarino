@@ -10,14 +10,14 @@ const CartWidget = () => {
   let total = getTotalQuantity();
 
   return (
-    <Link to="/cart">
-      <div className="container-cart">
-        <ShoppingCartTwoToneIcon />
+    <div className="container-cart">
+      <Link to="/cart">
+        <ShoppingCartTwoToneIcon sx={{ color: "grey" }} />
         <div className="bubble-counter">
           <span>{total}</span>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

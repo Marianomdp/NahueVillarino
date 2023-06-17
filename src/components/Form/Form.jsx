@@ -7,6 +7,8 @@ const Form = () => {
     nombre: "",
     apellido: "",
     telefono: "",
+    email: "",
+    emailConfirm: "",
   });
 
   const handleChange = (e) => {
@@ -20,17 +22,27 @@ const Form = () => {
     console.log(userData);
   };
 
+  const cancelarFormulario = () => {
+    setUserData({
+      nombre: "",
+      apellido: "",
+      telefono: "",
+      email: "",
+      emailConfirm: "",
+    });
+  };
+
   return (
     <div className={styles.formulario}>
-      <Typography variant="h3">CONTACTO</Typography>
+      <Typography variant="h3">CONTACT</Typography>
 
       <form onSubmit={envioDeFormulario}>
         <div>
-          <label htmlFor="nombre">Nombre:</label>
+          <label htmlFor="nombre">Name:</label>
           <input
             type="text"
             id="nombre"
-            placeholder="Ingresa tu nombre"
+            placeholder="Name here"
             name="nombre"
             value={userData.nombre}
             onChange={handleChange}
@@ -50,22 +62,22 @@ const Form = () => {
           />
         </div>
         <div>
-          <label htmlFor="telefono">Teléfono:</label>
+          <label htmlFor="telefono">Phone:</label>
           <input
             type="tel"
             id="telefono"
-            placeholder="Ingresa tu teléfono"
+            placeholder="phone number"
             name="telefono"
             value={userData.telefono}
             onChange={handleChange}
           />
         </div>
         <div>
-          <label htmlFor="email">Correo electrónico:</label>
+          <label htmlFor="email">E mail:</label>
           <input
             type="email"
             id="email"
-            placeholder="Ingresa tu correo electrónico"
+            placeholder="email here"
             name="email"
             value={userData.email}
             onChange={handleChange}
@@ -73,11 +85,11 @@ const Form = () => {
           />
         </div>
         <div>
-          <label htmlFor="emailConfirm">Confirmar correo electrónico:</label>
+          <label htmlFor="emailConfirm">confirm email:</label>
           <input
             type="email"
             id="emailConfirm"
-            placeholder="Confirma tu correo electrónico"
+            placeholder="Confirm your email"
             name="emailConfirm"
             value={userData.emailConfirm}
             onChange={handleChange}
@@ -93,9 +105,11 @@ const Form = () => {
             !userData.emailConfirm
           }
         >
-          Enviar
+          Submit
         </button>
-        <button type="button">Cancelar</button>
+        <button type="button" onClick={cancelarFormulario}>
+          Cancel
+        </button>
       </form>
     </div>
   );
