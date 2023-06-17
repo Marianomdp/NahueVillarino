@@ -3,9 +3,10 @@ import { Footer } from "./components/Footer/Footer";
 import { NavBar } from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
-import { Form } from "./components/Form/Form";
+import Form from "./components/Form/Form";
 import Bio from "./components/Bio/Bio";
 import CartContextProvider from "./context/CartContext";
+import CartContainer from "./components/Cart/CartContainer";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/cart" element={<CartContainer />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/contact" element={<Form />} />
+          <Route path="*" element={"Error, la ruta no existe"} />
         </Routes>
         <Footer />
       </CartContextProvider>

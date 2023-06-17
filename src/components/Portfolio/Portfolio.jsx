@@ -11,7 +11,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div>
       <CNav variant="tabs">
         <CNavItem>
           <CNavLink
@@ -23,10 +23,10 @@ const Portfolio = () => {
         </CNavItem>
         <CNavItem>
           <CNavLink
-            onClick={() => handleSectionChange("landscapes")}
-            active={currentSection === "landscapes"}
+            onClick={() => handleSectionChange("landscape")}
+            active={currentSection === "landscape"}
           >
-            Landscapes
+            Landscape
           </CNavLink>
         </CNavItem>
         <CNavItem>
@@ -58,35 +58,30 @@ const Portfolio = () => {
       <div>
         {currentSection === "bands" && (
           <div>
-            <h2>Bands Section</h2>
             <ItemListContainer category="bands" />
           </div>
         )}
 
-        {currentSection === "landscapes" && (
+        {currentSection === "landscape" && (
           <div>
-            <h2>Landscapes Section</h2>
-            <ItemListContainer category="landscapes" />
+            <ItemListContainer category="landscape" />
           </div>
         )}
 
         {currentSection === "wildlife" && (
           <div>
-            <h2>Wildlife Section</h2>
             <ItemListContainer category="wildlife" />
           </div>
         )}
 
         {currentSection === "texture" && (
           <div>
-            <h2>Texture Section</h2>
             <ItemListContainer category="texture" />
           </div>
         )}
 
         {currentSection === "street" && (
           <div>
-            <h2>Street Section</h2>
             <ItemListContainer category="street" />
           </div>
         )}

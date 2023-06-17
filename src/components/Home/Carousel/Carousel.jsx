@@ -5,7 +5,13 @@ import React from "react";
 
 const Carousel = () => {
   return (
-    <CCarousel interval={3000} controls transition="crossfade">
+    <CCarousel
+      interval={1500}
+      controls
+      transition="crossfade"
+      loop={true}
+      style={{ opacity: 0.8 }}
+    >
       <CCarouselItem>
         <div style={{ maxWidth: "100%", maxHeight: "100vh" }}>
           <CImage

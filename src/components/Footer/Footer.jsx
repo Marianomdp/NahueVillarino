@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.modules.css";
+
 import { CFooter, CNavLink, CNavbarBrand } from "@coreui/react";
 import { Outlet } from "react-router-dom";
 
@@ -15,6 +15,32 @@ export const Footer = () => {
             width="80"
             height="70"
           />
+        </CNavbarBrand>
+        <CNavbarBrand style={{ opacity: "0.4" }}>
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1687014120/pngegg_4_gllbil.png"
+              alt="instagram"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1687014120/pngegg_5_w7pflt.png"
+              alt="facebook"
+              width="25"
+              height="25"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1687014120/pngegg_6_heey7r.png"
+              alt="linkedin"
+              width="30"
+              height="30"
+            />
+          </a>
         </CNavbarBrand>
         <div style={{ color: "white" }}>
           <CNavLink href="#" active>

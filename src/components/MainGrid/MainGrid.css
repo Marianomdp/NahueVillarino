@@ -1,7 +1,0 @@
-.bw-to-color {
-  filter: none; /* Eliminar la escala de grises inicial */
-}
-
-.bw-to-color:hover {
-  filter: saturate(200%); /* Aplicar escala de grises al hacer hover */
-}

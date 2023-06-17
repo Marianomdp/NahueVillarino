@@ -19,8 +19,7 @@ export default function Section() {
     <ImageList
       sx={{
         backgroundColor: "black",
-        padding: "20px 20px 20px 20px",
-        margin: 0,
+        padding: "5px",
       }}
       cols={cols}
     >

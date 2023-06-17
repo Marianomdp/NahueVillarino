@@ -29,9 +29,7 @@ const ItemCard = ({ item }) => {
         <Typography gutterBottom variant="h6" component="div" color="#102e44">
           {item.title}
         </Typography>
-        <Typography variant="body2" color="#102e44">
-          {item.description}
-        </Typography>
+
         <Typography variant="h6" color="#102e44">
           ${item.price}
         </Typography>
@@ -46,5 +44,4 @@ const ItemCard = ({ item }) => {
     </Card>
   );
 };
-
 export default ItemCard;

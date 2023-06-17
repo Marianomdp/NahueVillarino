@@ -23,7 +23,7 @@ export const NavBar = () => {
           className="bg-dark"
           placement="sticky-top"
         >
-          <CContainer fluid>
+          <CContainer fluid style={{ position: "relative" }}>
             <CNavbarBrand href="/">
               <img
                 src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684876680/fotor_2023-5-23_18_15_32_gyinj9.png"

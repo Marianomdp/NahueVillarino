@@ -1,6 +1,6 @@
-import Carousel from "../Carousel/Carousel";
-import MainGrid from "../MainGrid/MainGrid";
-import VideoSec from "../MainGrid/VideoSec";
+import MainGrid from "./MainGrid/MainGrid";
+import VideoSec from "./MainGrid/VideoSec";
+import Carousel from "./Carousel/Carousel";
 
 const Home = () => {
   return (

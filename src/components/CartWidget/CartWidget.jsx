@@ -1,11 +1,23 @@
 import ShoppingCartTwoToneIcon from "@mui/icons-material/ShoppingCartTwoTone";
+import "./CartWidget.css";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const CartWidget = () => {
+  const { getTotalQuantity } = useContext(CartContext);
+
+  let total = getTotalQuantity();
+
   return (
-    <div className="cart-widget">
-      <ShoppingCartTwoToneIcon />
-      <span className="cart-widget-count">0</span>
-    </div>
+    <Link to="/cart">
+      <div className="container-cart">
+        <ShoppingCartTwoToneIcon />
+        <div className="bubble-counter">
+          <span>{total}</span>
+        </div>
+      </div>
+    </Link>
   );
 };
 
