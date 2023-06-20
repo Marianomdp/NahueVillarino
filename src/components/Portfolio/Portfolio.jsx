@@ -2,6 +2,7 @@ import { CNav, CNavItem, CNavLink } from "@coreui/react";
 import React from "react";
 import { useState } from "react";
 import ItemListContainer from "../ItemList/ItemListContainer";
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const [currentSection, setCurrentSection] = useState("bands");

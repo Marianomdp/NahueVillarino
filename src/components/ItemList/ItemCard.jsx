@@ -1,47 +1,59 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
 
 const ItemCard = ({ item }) => {
   return (
-    <Card
-      sx={{
-        minWidth: 140,
-        maxWidth: 140,
-        margin: 1,
-        borderInlineColor: "#102e44",
-        backgroundColor: "#ebf3f8",
+    <div
+      style={{
+        backgroundImage: `url(${item.img})`,
+        borderRadius: "4%",
+        border: "solid",
+        borderWidth: "1px",
+        minWidth: "300px",
+        minHeight: "300px",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        padding: "10px",
+        margin: "15px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignContent: "space-around",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+        transition: "box-shadow 0.3s ease 2s",
+        cursor: "pointer",
+        "&:hover": {
+          boxShadow: "(0, 0, 0, 0.2) 9px 13px 10px 4px",
+        },
       }}
     >
-      <CardMedia
-        sx={{ height: 100, maxWidth: 100, margin: "auto" }}
-        image={item.img}
-        title="foto"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div" color="#102e44">
-          {item.title}
-        </Typography>
-
-        <Typography variant="h6" color="#102e44">
-          ${item.price}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Link to={`/ItemDetail/${item.id}`}>
-          <Button variant="contained" size="small" style={{ marginBottom: 1 }}>
-            Detalle
-          </Button>
-        </Link>
-      </CardActions>
-    </Card>
+      <div
+        style={{
+          background: "rgba(0, 0, 0, 0.5)",
+          berder: "solid",
+          borderRadius: "5%",
+          padding: "5px",
+          color: "#fff",
+        }}
+      >
+        <h3>{item.title}</h3>
+      </div>
+      <Link
+        to={`/ItemDetail/${item.id}`}
+        style={{
+          background: "rgba(0, 0, 0, 0.5)",
+          berder: "solid",
+          borderRadius: "5%",
+          color: "#fff",
+        }}
+      >
+        <Button variant="contained" size="small" style={{ marginBottom: 1 }}>
+          More
+        </Button>
+      </Link>
+    </div>
   );
 };
 export default ItemCard;

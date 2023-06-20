@@ -33,7 +33,7 @@ export const Footer = () => {
               height="25"
             />
           </a>
-          <a href="#">
+          <a href="/">
             <img
               src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1687014120/pngegg_6_heey7r.png"
               alt="linkedin"
@@ -43,8 +43,11 @@ export const Footer = () => {
           </a>
         </CNavbarBrand>
         <div style={{ color: "white" }}>
-          <CNavLink href="#" active>
-            &copy; 2023 philosolutions.
+          <CNavLink
+            href="https://www.linkedin.com/in/mariano-collovatti-6265a2248/"
+            active
+          >
+            &copy; 2023 Mariano Collovatti.
           </CNavLink>
         </div>
       </CFooter>
