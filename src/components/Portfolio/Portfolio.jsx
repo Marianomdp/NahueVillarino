@@ -11,7 +11,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div>
+    <div style={{ minHeight: "82vh" }}>
       <CNav variant="tabs">
         <CNavItem>
           <CNavLink

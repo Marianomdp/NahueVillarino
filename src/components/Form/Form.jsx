@@ -33,7 +33,7 @@ const Form = () => {
   };
 
   return (
-    <div className={styles.formulario}>
+    <div className={styles.formulario} style={{ minHeight: "82vh" }}>
       <Typography variant="h3">CONTACT</Typography>
 
       <form onSubmit={envioDeFormulario}>

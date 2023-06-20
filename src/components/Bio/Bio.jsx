@@ -3,7 +3,7 @@ import "./Bio.css";
 
 const Bio = () => {
   return (
-    <div className="bio-container">
+    <div className="bio-container" style={{ minHeight: "82vh" }}>
       <h1> Biography</h1>
       <div className="bio-in">
         <p>

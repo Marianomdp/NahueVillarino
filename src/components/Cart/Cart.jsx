@@ -13,7 +13,7 @@ const Cart = ({
   navigate,
 }) => {
   return (
-    <div>
+    <div style={{ minHeight: "80vh" }}>
       <div className="cart-container">
         <div className="container-items">
           {cart.map((item) => {
