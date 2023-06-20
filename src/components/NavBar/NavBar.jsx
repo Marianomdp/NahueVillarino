@@ -4,14 +4,12 @@ import CartWidget from "../CartWidget/CartWidget";
 import {
   CCollapse,
   CContainer,
-  CNavItem,
   CNavbar,
   CNavbarBrand,
-  CNavbarNav,
   CNavbarToggler,
 } from "@coreui/react";
 import { Link, Outlet } from "react-router-dom";
-import { Box, Button } from "@mui/material";
+import { Button } from "@mui/material";
 
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
@@ -23,6 +21,7 @@ export const NavBar = () => {
           colorScheme="dark"
           className="bg-dark"
           placement="sticky-top"
+          style={{ opacity: 0.9 }}
         >
           <CContainer fluid style={{ position: "relative" }}>
             <CNavbarBrand href="/">
@@ -40,32 +39,36 @@ export const NavBar = () => {
             />
             <CCollapse className="navbar-collapse" visible={visible}>
               <div>
-                <Button
-                  variant="contained"
-                  size="small"
-                  href="/portfolio"
-                  sx={{ backgroundColor: "grey" }}
-                >
-                  Portfolio
-                </Button>
-
-                <Button
-                  variant="contained"
-                  size="small"
-                  href="/bio"
-                  sx={{ backgroundColor: "grey" }}
-                >
-                  Bio
-                </Button>
-
-                <Button
-                  variant="contained"
-                  size="small"
-                  href="/contact"
-                  sx={{ backgroundColor: "grey" }}
-                >
-                  Contact
-                </Button>
+                <Link to="/portfolio">
+                  <Button
+                    variant="contained"
+                    size="small"
+                    sx={{ margin: "10px", color: "beige!important" }}
+                  >
+                    Portfolio
+                  </Button>
+                </Link>
+                <Link to="/bio">
+                  <Button
+                    variant="contained"
+                    size="small"
+                    sx={{
+                      margin: "10px",
+                      color: "beige!important",
+                    }}
+                  >
+                    Bio
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button
+                    variant="contained"
+                    size="small"
+                    sx={{ margin: "10px", color: "beige!important" }}
+                  >
+                    Contact
+                  </Button>
+                </Link>
               </div>
             </CCollapse>{" "}
             <CNavbarBrand className="widget" href="#">

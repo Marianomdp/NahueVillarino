@@ -18,8 +18,10 @@ export default function Section() {
   return (
     <ImageList
       sx={{
-        backgroundColor: "black",
-        padding: "5px",
+        margin: "20px",
+        objectFit: "contain",
+        borderRadius: "0.5%",
+        border: "solid",
       }}
       cols={cols}
     >
