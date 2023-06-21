@@ -57,8 +57,8 @@ const Cart = ({
         </div>
         <div className="cart-info">
           <h2>Cart description:</h2>
-          <h3>Images: {totalProducts()}</h3>
-          <h3>Total de productos: $ {total}</h3>
+          <h3>Photos: {totalProducts()}</h3>
+          <h3>Total: $ {total}</h3>
           {cart.length > 0 ? (
             <div className="btn-cart">
               {" "}
