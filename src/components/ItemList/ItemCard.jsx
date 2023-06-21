@@ -47,7 +47,7 @@ const ItemCard = ({ item }) => {
           color: "#fff",
         }}
       >
-        <h3>{item.title}</h3>
+        <h3 style={{ color: "rgb(236, 236, 196)" }}>{item.title}</h3>
       </div>
       <Link to={`/ItemDetail/${item.id}`}>
         <Button
@@ -59,7 +59,7 @@ const ItemCard = ({ item }) => {
             maxWidth: "20px",
             maxHeight: "30px",
             backgroundColor: "rgba(0, 0, 0, 0.8)",
-            color: "rgb(255, 255, 255)",
+            color: "rgb(236, 236, 196)",
             padding: "6px 12px",
           }}
         >
