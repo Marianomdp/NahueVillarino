@@ -21,7 +21,6 @@ export default function Section() {
         margin: "25px",
         objectFit: "contain",
         borderRadius: "0.5%",
-        border: "solid",
       }}
       cols={cols}
     >

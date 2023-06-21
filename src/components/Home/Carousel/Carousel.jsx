@@ -20,7 +20,7 @@ const Carousel = () => {
           style={{
             objectFit: "contain",
             borderRadius: "2%",
-            border: "solid",
+
             maxWidth: "100%",
             maxHeight: "100%",
           }}
