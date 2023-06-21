@@ -12,7 +12,7 @@ const CartWidget = () => {
   return (
     <div className="container-cart">
       <Link to="/cart">
-        <ShoppingCartTwoToneIcon sx={{ color: "grey" }} />
+        <ShoppingCartTwoToneIcon sx={{ color: "rgb(236, 236, 196)" }} />
         <div className="bubble-counter">
           <span>{total}</span>
         </div>

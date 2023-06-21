@@ -35,6 +35,7 @@ export const NavBar = () => {
             <CNavbarToggler
               aria-label="Toggle navigation"
               aria-expanded={visible}
+              sx={{ color: "rgb(236, 236, 196)!important" }}
               onClick={() => setVisible(!visible)}
             />
             <CCollapse className="navbar-collapse" visible={visible}>
@@ -43,7 +44,10 @@ export const NavBar = () => {
                   <Button
                     variant="contained"
                     size="small"
-                    sx={{ margin: "10px", color: "beige!important" }}
+                    sx={{
+                      margin: "10px",
+                      color: "rgb(236, 236, 196)!important",
+                    }}
                   >
                     Portfolio
                   </Button>

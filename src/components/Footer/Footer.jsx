@@ -42,7 +42,7 @@ export const Footer = () => {
             />
           </a>
         </CNavbarBrand>
-        <div style={{ color: "white" }}>
+        <div style={{ color: "rgb(236, 236, 196)" }}>
           <CNavLink
             href="https://www.linkedin.com/in/mariano-collovatti-6265a2248/"
             active

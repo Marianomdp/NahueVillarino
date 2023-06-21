@@ -18,7 +18,7 @@ const ItemCard = ({ item }) => {
       style={{
         backgroundImage: `url(${item.img})`,
         borderRadius: "4%",
-        border: "1px solid rgba(255, 255, 255, 0.2)",
+        border: "1px solid rgb(236, 236, 196)",
         minWidth: "300px",
         minHeight: "300px",
         backgroundSize: "cover",
@@ -40,7 +40,7 @@ const ItemCard = ({ item }) => {
     >
       <div
         style={{
-          background: "rgba(0, 0, 0, 0.5)",
+          background: "rgba(0, 0, 0, 0.6)",
           backgroundImage: `url(${item.img})`,
           borderRadius: "5%",
           padding: "5px",
@@ -58,7 +58,7 @@ const ItemCard = ({ item }) => {
             fontSize: "15px",
             maxWidth: "20px",
             maxHeight: "30px",
-            backgroundColor: "black",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
             color: "rgb(255, 255, 255)",
             padding: "6px 12px",
           }}
