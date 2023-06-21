@@ -26,12 +26,13 @@ const ItemCard = ({ item }) => {
         backgroundRepeat: "no-repeat",
         padding: "10px",
         margin: "15px",
+        marginTop: "20px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignContent: "space-around",
         cursor: "pointer",
-        transform: hovered ? "scale(1.05)" : "scale(1)",
+        transform: hovered ? "scale(1.04)" : "scale(1)",
         transition: "transform 0.3s ease",
       }}
       onMouseEnter={handleMouseEnter}

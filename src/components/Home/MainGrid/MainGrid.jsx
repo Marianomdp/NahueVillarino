@@ -18,7 +18,7 @@ export default function Section() {
   return (
     <ImageList
       sx={{
-        margin: "20px",
+        margin: "25px",
         objectFit: "contain",
         borderRadius: "0.5%",
         border: "solid",
@@ -26,13 +26,14 @@ export default function Section() {
       cols={cols}
     >
       {itemData.map((item) => (
-        <ImageListItem key={item.img}>
+        <ImageListItem key={item.img} sx={{ margin: "1px" }}>
           <img
             src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
             srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
             className={"bw-to-color"}
+            style={{ borderRadius: "1%" }}
           />
         </ImageListItem>
       ))}

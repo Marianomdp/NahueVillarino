@@ -6,7 +6,7 @@ const VideoSec = () => {
     <div
       style={{
         opacity: 0.7,
-        margin: "15px",
+        margin: "25px",
         border: "solid",
         borderRadius: "1%",
       }}

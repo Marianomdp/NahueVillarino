@@ -1,3 +1,4 @@
 .bw-to-color {
-  filter: none; /* Eliminar la escala de grises inicial */
+  filter: none;
+  /* Eliminar la escala de grises inicial */
 }

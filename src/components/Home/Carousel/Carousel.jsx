@@ -12,7 +12,7 @@ const Carousel = () => {
       loop={true}
       style={{
         opacity: 0.8,
-        margin: "15px",
+        margin: "25px",
       }}
     >
       <CCarouselItem>
