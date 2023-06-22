@@ -7,6 +7,8 @@ import Form from "./components/Form/Form";
 import Bio from "./components/Bio/Bio";
 import CartContextProvider from "./context/CartContext";
 import CartContainer from "./components/Cart/CartContainer";
+import ItemListContainer from "./components/ItemList/ItemListContainer";
+import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+
+          <Route
+            path="/category/:categoryName"
+            element={<ItemListContainer />}
+          />
+          <Route path="/ItemDetail/:id" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<CartContainer />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/contact" element={<Form />} />

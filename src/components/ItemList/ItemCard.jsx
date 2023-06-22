@@ -63,7 +63,7 @@ const ItemCard = ({ item }) => {
             padding: "6px 12px",
           }}
         >
-          More
+          See
         </Button>
       </Link>
     </div>
