@@ -10,6 +10,8 @@ import CartContainer from "./components/Cart/CartContainer";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
 
+import { FormCheckoutContainer } from "./components/FormCheckout/FormCheckoutContainer";
+
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +29,7 @@ function App() {
           <Route path="/cart" element={<CartContainer />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/contact" element={<Form />} />
+          <Route path="/checkout" element={<FormCheckoutContainer />} />
           <Route path="*" element={"Error, la ruta no existe"} />
         </Routes>
         <Footer />
