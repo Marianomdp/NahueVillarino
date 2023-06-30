@@ -27,25 +27,13 @@ const Bio = () => {
           recusandae sed? Velit ab magni commodi officiis excepturi adipisci
           blanditiis maiores maxime pariatur, harum voluptatibus nam culpa
           assumenda sapiente aliquid at facere debitis dolorum sit atque
-          quisquam consequatur illum eveniet exercitationem. Expedita. Aperiam
-          praesentium cupiditate, alias fugit nam fuga, consequatur dolores
-          suscipit reprehenderit exercitationem corporis a voluptate ut
-          inventore reiciendis, labore commodi cum quis aspernatur ad iste
-          fugiat? Totam dolorem similique mollitia! Consequatur, minus debitis
-          asperiores eveniet in quos vel aut nostrum ex quam repellendus ad
-          eaque molestiae earum dolorem quidem molestias necessitatibus
-          similique nemo minima! Rem suscipit laboriosam explicabo quia enim!
-          Nostrum, minima nemo incidunt sunt error cum voluptatibus excepturi
-          corporis at dolore, in dolorum consectetur aliquam magnam! Facilis,
-          vero cum ipsum officiis voluptatibus at quisquam porro? Reiciendis ex
-          repellat labore? Fugiat provident culpa dolores consequatur numquam
-          tempore voluptates hic odio quidem sed? Optio aspernatur nemo aperiam
-          possimus error reprehenderit? Unde minus ut eaque alias recusandae
-          repellat quis quia illo dolores.
+          quisquam consequatur illum eveniet exercitationem. Expedita.
         </p>
+        <br />
+        <br />
         <img
           className="img-bio"
-          src="https://mir-s3-cdn-cf.behance.net/user/115/d06dd1340290175.62576e00425ac.jpg"
+          src="https://res.cloudinary.com/dnj3a7mfg/image/upload/v1687879054/NGF_2732_u37ram.jpg"
           alt="Nahuel Villarino"
         />
       </div>

@@ -7,13 +7,11 @@ const VideoSec = () => {
       style={{
         opacity: 0.7,
         margin: "25px",
-
-        borderRadius: "1%",
       }}
     >
       <ReactPlayer
         className="react-player"
-        url="https://res.cloudinary.com/dnj3a7mfg/video/upload/v1686111028/El_Coleccionista_WM_2022_Teaser_sin_intro_s0tp4z.mp4"
+        url="https://res.cloudinary.com/dnj3a7mfg/video/upload/v1688007919/video_web_sfwpbi.mp4"
         width="100%"
         height="100%"
         playing={true}

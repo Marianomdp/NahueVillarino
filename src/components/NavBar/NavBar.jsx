@@ -24,12 +24,12 @@ export const NavBar = () => {
           style={{ opacity: 0.9 }}
         >
           <CContainer fluid style={{ position: "relative" }}>
-            <CNavbarBrand href="/">
+            <CNavbarBrand href="/" style={{ marginLeft: 15 }}>
               <img
-                src="https://res.cloudinary.com/dmqsnjyfq/image/upload/v1684876680/fotor_2023-5-23_18_15_32_gyinj9.png"
+                src="https://res.cloudinary.com/dnj3a7mfg/image/upload/v1687879191/NuevoLogo52_fr8pqc.png"
                 alt="logo principal"
-                width="80"
-                height="70"
+                width="50"
+                height="50"
               />
             </CNavbarBrand>
             <CNavbarToggler

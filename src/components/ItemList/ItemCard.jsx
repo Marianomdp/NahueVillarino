@@ -38,7 +38,7 @@ const ItemCard = ({ item }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div
+      {/* <div
         style={{
           background: "rgba(0, 0, 0, 0.6)",
           backgroundImage: `url(${item.img})`,
@@ -48,7 +48,7 @@ const ItemCard = ({ item }) => {
         }}
       >
         <h3 style={{ color: "rgb(236, 236, 196)" }}>{item.title}</h3>
-      </div>
+      </div> */}
       <Link to={`/ItemDetail/${item.id}`}>
         <Button
           size="small"
