@@ -28,8 +28,8 @@ const ItemDetail = ({ product, onAdd, cantidadTotal }) => {
         >
           <img
             style={{
-              maxWidth: "45vw",
-              maxHeight: "45vh",
+              maxWidth: "80vw",
+              maxHeight: "60vh",
               border: "1px solid beige",
             }}
             src={product.img}

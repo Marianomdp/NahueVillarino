@@ -7,8 +7,9 @@
 }
 h1,
 p {
-  color: rgb(236, 236, 196);
+  color: rgb(236, 236, 196) !important;
 }
+
 .bio-in {
   display: flex;
   flex-direction: column-reverse;
