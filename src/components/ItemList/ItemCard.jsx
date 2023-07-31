@@ -38,17 +38,19 @@ const ItemCard = ({ item }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {/* <div
-        style={{
-          background: "rgba(0, 0, 0, 0.6)",
-          backgroundImage: `url(${item.img})`,
-          borderRadius: "5%",
-          padding: "5px",
-          color: "#fff",
-        }}
-      >
-        <h3 style={{ color: "rgb(236, 236, 196)" }}>{item.title}</h3>
-      </div> */}
+      {
+        <div
+          style={{
+            background: "rgba(0, 0, 0, 0.6)",
+            backgroundImage: `url(${item.img})`,
+            borderRadius: "5%",
+            padding: "5px",
+            color: "#fff",
+          }}
+        >
+          <h3 style={{ color: "rgb(236, 236, 196)" }}>{item.title}</h3>
+        </div>
+      }
       <Link to={`/ItemDetail/${item.id}`}>
         <Button
           size="small"

@@ -11,7 +11,7 @@ const VideoSec = () => {
     >
       <ReactPlayer
         className="react-player"
-        url="https://res.cloudinary.com/dnj3a7mfg/video/upload/v1688007919/video_web_sfwpbi.mp4"
+        url="https://res.cloudinary.com/dnj3a7mfg/video/upload/v1690242242/DSC_2015_x73ly9.mp4"
         width="100%"
         height="100%"
         playing={true}
